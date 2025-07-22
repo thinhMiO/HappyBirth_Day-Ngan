@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>CHUC MUNG SINH NHAT EM NHE</title>
+  <link rel="stylesheet" href="style/style.css">
+  <style>
+#openGiftText {
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+</style>
+</head>
+<body>
+  <canvas id="matrixCanvas"></canvas>
+  <audio id="sound" loop autoplay>
+    <!-- <source src="./OnlyLove.mp3" type="audio/mpeg" /> -->
+  </audio>
+  <div id="giftBoxWrapper" style="display:none; position:fixed; left:50%; top:50%; transform:translate(-50%,-50%); z-index:10;">
+    <img id="giftBox" 
+         src="https://cdn-icons-png.flaticon.com/512/3468/3468086.png"
+         style="width:200px; display:block;" 
+         alt="Gift Box" />
+    <div id="openGiftText"
+         style="position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); font-size:2rem; color:#fff; text-shadow:2px 2px 8px #000; font-weight:bold; pointer-events:none;">
+      Mở quà 🎁
+    </div>
+  </div>
+  <script src="style/script.js"></script>
+</body>
+</html>
